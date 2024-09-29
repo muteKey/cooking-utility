@@ -1,0 +1,56 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2b283a;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #b80000; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 0.5em;
+}
+
+main {
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-parameters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  column-gap: 0.5em;
+}
+
+.parameters-pair {
+  display: flex;
+  gap: 0.5em;
+}
+
+.ingredient-input {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2em 2.25em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
