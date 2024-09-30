@@ -18,6 +18,7 @@ export default defineConfig({
       short_name: 'cook-utility',
       description: 'Set of handy tools for cooking calculations etc',
       theme_color: '#f5f5f5',
+      background_color: '#B80000',
       icons:[
         {
           src: 'pwa-192x192.png',
