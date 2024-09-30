@@ -61,7 +61,7 @@ function App() {
             </div>
       
             <button className='btn-add-ingredient' onClick={handleAddIngredient}>
-              <label>Додати інгредієнт</label>
+              Додати інгредієнт
             </button>
             </>
           ) : null

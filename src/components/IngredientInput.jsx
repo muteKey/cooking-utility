@@ -14,7 +14,7 @@ export default function IngredientInput(props) {
             <input 
                 type="number" 
                 name="amount" 
-                placeholder="Кількість в грамах"
+                placeholder="Грамів"
                 onChange={(event) => {props.onChange(event)}}
             />
             {

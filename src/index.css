@@ -45,10 +45,14 @@ h4 {
 }
 
 .parameters-pair {
-  display: flex;
-  height: 3rem;
+  display: flex;  
   justify-content: space;
   gap: 1rem;
+}
+
+.parameters-pair input {
+  height: 3rem;
+  width: 100%;
 }
 
 .parameters-pair input {
@@ -59,15 +63,23 @@ h4 {
 
 .ingredient-input {
   display: flex;
-  width: 48.8%;
   gap: 0.25em;
   align-items: center;
+  height: 3rem;
+}
+
+.ingredients-container input, select {
+  height: 100%
+}
+
+.ingredients-container input {
+  width: 4rem;
 }
 
 .ingredients-container {
   display: flex;
   flex-direction: column;
-  row-gap: 1em;
+  gap: 1em;
 }
 
 .btn-add-ingredient {
