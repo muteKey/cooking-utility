@@ -44,6 +44,7 @@ export default function MainParametersForm(props) {
                         <input 
                             type="number" 
                             placeholder='Діаметр рецептної форми' 
+                            id='receiptDiameter' 
                             name='receiptDiameter' 
                             onChange={handleChange}
                             value={formData.receiptDiameter}
@@ -54,6 +55,7 @@ export default function MainParametersForm(props) {
                         <input 
                             type="number" 
                             placeholder='Висота рецептної форми' 
+                            id='receiptHeight' 
                             name='receiptHeight' 
                             onChange={handleChange}
                             value={formData.receiptHeight}
@@ -66,6 +68,7 @@ export default function MainParametersForm(props) {
                         <input 
                             type="number" 
                             placeholder='Діаметр Вашої форми'
+                            id='ownDiameter' 
                             name='ownDiameter' 
                             onChange={handleChange}
                             value={formData.ownDiameter} 
@@ -76,6 +79,7 @@ export default function MainParametersForm(props) {
                         <input 
                             type="number" 
                             placeholder='Висота Вашої форми' 
+                            id='ownHeight'
                             name='ownHeight' 
                             onChange={handleChange}
                             value={formData.ownHeight}

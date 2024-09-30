@@ -26,6 +26,10 @@ function App() {
     }))
   }
 
+  function handleDelete(ingredient) {
+    setIngredients(ingredients => ingredients.filter(el => el.id !== ingredient.id))
+  }
+
   return (
     <>
       <header>
@@ -47,14 +51,11 @@ function App() {
                     products={ingredient.products} 
                     result={ingredient.result}
                     onChange={(event) => {
-                      console.log("ingredient on change");
-                      
                         const value = Number(event.target.value)
-                        if (value) {
-                         handleIngredientChange(ingredient, value)
-                        }                        
+                        handleIngredientChange(ingredient, value)
                       } 
                     }
+                    onDelete={ () => { handleDelete(ingredient) } }
                   />
                 )
               }

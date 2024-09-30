@@ -1,6 +1,12 @@
 import React from "react";
+import trash from '../assets/trash.svg'
 
 export default function IngredientInput(props) {
+    function handleClick(event) {
+        event.preventDefault()
+        props.onDelete()
+    }
+
     return (
         <div className="ingredient-input">
             {props.number}
@@ -14,6 +20,7 @@ export default function IngredientInput(props) {
             <input 
                 type="number" 
                 name="amount" 
+                className="ingredients-container-input"
                 placeholder="Грамів"
                 onChange={(event) => {props.onChange(event)}}
             />
@@ -22,6 +29,7 @@ export default function IngredientInput(props) {
                 (<h4>{props.result.toFixed(2)}</h4>) 
                 : null
             } 
+            <input type="image" src={trash} className="btn-remove-ingredient" onClick={handleClick}/>
         </div>
     )
 }
