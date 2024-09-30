@@ -36,7 +36,7 @@ function App() {
         {
           coefficient > 0 ? (
             <>
-              <h4>Коефіціент {coefficient}</h4> 
+              <h4>Коефіціент {coefficient.toFixed(2)}</h4> 
               <div className='ingredients-container'>
               <p>Інгредієнти</p>
               {
@@ -60,8 +60,8 @@ function App() {
               }
             </div>
       
-            <button onClick={handleAddIngredient}>
-              <label>+  Додати інгредієнт</label>
+            <button className='btn-add-ingredient' onClick={handleAddIngredient}>
+              <label>Додати інгредієнт</label>
             </button>
             </>
           ) : null

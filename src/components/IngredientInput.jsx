@@ -19,7 +19,7 @@ export default function IngredientInput(props) {
             />
             {
                 props.result > 0 ?
-                (<h4>{props.result}</h4>) 
+                (<h4>{props.result.toFixed(2)}</h4>) 
                 : null
             } 
         </div>

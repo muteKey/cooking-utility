@@ -36,9 +36,9 @@ export default function MainParametersForm(props) {
     }
 
     return (
-        <form>
+        <form className="main-parameters-form">
             <div className='main-parameters'>
-                <div className='parameter-pair'>
+                <div className='parameters-pair'>
                     <input 
                         type="number" 
                         placeholder='Діаметр Вашої форми' 
@@ -54,7 +54,7 @@ export default function MainParametersForm(props) {
                         value={formData.ownHeight}
                     />
                 </div>
-                <div className='parameter-pair'>
+                <div className='parameters-pair'>
                     <input 
                         type="number" 
                         placeholder='Діаметр рецептної форми' 

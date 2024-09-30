@@ -16,7 +16,7 @@ export default defineConfig({
     manifest: {
       name: 'cook-utility',
       short_name: 'cook-utility',
-      description: 'Set of handy tools for cooking calculations and etc',
+      description: 'Set of handy tools for cooking calculations etc',
       theme_color: '#f5f5f5',
       icons:[
         {

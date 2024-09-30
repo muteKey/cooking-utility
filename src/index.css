@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #2b283a;
@@ -13,28 +17,49 @@ header h1 {
   margin: 0;
   font-size: 1rem;
   color: whitesmoke;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+/* Main Params form */
+
 .main-parameters {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  column-gap: 0.5em;
+  gap: 2em;
 }
 
 .parameters-pair {
   display: flex;
-  gap: 0.5em;
+  height: 3rem;
+  justify-content: space;
+  gap: 1rem;
 }
+
+.parameters-pair input {
+  flex: 1;
+}
+
+/* Ingredients form */
 
 .ingredient-input {
   display: flex;
+  width: 48.8%;
   gap: 0.25em;
   align-items: center;
 }
@@ -44,6 +69,12 @@ main {
   flex-direction: column;
   row-gap: 1em;
 }
+
+.btn-add-ingredient {
+  height: 3rem;
+}
+
+/* Breakpoints */
 
 @media (min-width: 768px) {
   header {
